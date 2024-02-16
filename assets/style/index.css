@@ -11,12 +11,27 @@
  
 body {
   font-family: 'Nunito sans', 'Open sans', Arial, sans-serif;
-  background-color: #191720;
-  color: #fff;
+  text-align: center;
   letter-spacing: 0.3px;
 }
  
-.container {
+container {
   width: min(100% - 30px, 1080px);
   margin-inline: auto;
+}
+
+#board {
+    height: 530px;
+    width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+    border: 10px solid lightgrey;
+}
+
+.card {
+    height: 128px;
+    width: 90px;
+    margin: 2.5px;
 }

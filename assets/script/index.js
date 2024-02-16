@@ -1,1 +1,39 @@
 'use strict';
+
+let errors = 0;
+let cardList = [
+    "darkness",
+    "double",
+    "fairy",
+    "fighting",
+    "fire",
+    "grass",
+    "lightning",
+    "metal",
+    "psychic",
+    "water"
+]
+
+let cardSet;
+let board = [];
+let rows = 4;
+let columns =5;
+
+window.onload = function() {
+    shuffleCards();
+    startGame();
+}
+
+function shuffleCards() {
+    cardSet = cardList.concat(cardList); //two of each card
+
+    // shuffling cards
+    for(let i=0; i < cardSet.length; i++ ) {
+        let j = Math.floor(Math.random() * cardSet.length);
+
+        // swap
+        let temp = cardSet[i];
+        cardSet[i] =  cardSet[j];
+        cardSet[j] = temp;
+    }
+}
