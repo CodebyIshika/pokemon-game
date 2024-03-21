@@ -24,3 +24,5 @@ Welcome to the Pokemon Memory Game! Test your memory and Pokemon knowledge with 
    - Pay attention to the Pokemon characters on each card during the 5-second preview.
    - Develop a strategy to remember the locations of the cards.
    - Focus on finding and remembering pairs of cards rather than randomly clicking.
+
+Click [here](https://codebyishika.github.io/pokemon-game/) to play the game
